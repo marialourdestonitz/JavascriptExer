@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	function connect(){
+	var firstN= document.getElementById("first");
+	var lastN= document.getElementById("last");
+
+	document.getElementById("answer").innerHTML= "Hello" + String(firstN.value) + " " +
+	 String(lastN.value);
+	}
+</script>
+</head>
+<body>
+	<form>
+		<label> May I ask for your First Name? </label> 
+		<input type = "text" id = "first"><br>
+		<label> May I ask for your Last Name? </label> 
+		<input type = "text" id = "last"><br>
+		<input type="button"  name="Submit" value="Greet" onclick="connect()">
+		<h2 id = "answer"> 
+		 </h2>
+		</form>
+	</body
+	></html>

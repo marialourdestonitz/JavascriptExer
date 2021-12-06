@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p class="para1"> Some text for this </p>
+	<p class="para1"> Some text for this </p>
+	<button onclick= "changeStyle()"> Submit </button>
+
+	<script>
+		function changeStyle(){
+			var paragraph= document.getElementsByClassName("para");
+			for( i= 0;1 < paragraph.length;i++)
+				{
+				paragraph[i].style.fontStyle="italic";
+			}
+		}
+	</script>
+</body>
+</html>

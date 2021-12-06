@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function validateTextBox(){
+			var box= document.getElementById("first");
+			var box2= document.getElementById("last");
+			var box3= document.getElementById("phone");
+			var box4= document.getElementById("email");
+
+			if(box.value.Length<3)
+			{
+				
+			alert ("Length of First Name should be longer than 3");
+			return false; 
+			if (box2.value.length < 3 )
+				{
+			alert ("Length of First Name should be longer than 3");
+			return false;     //the onsubmitwill stop}//code continued  on the next slide
+     //the onsubmitwill stop
+          if (box3.value.length < 3 )
+          {
+          	alert ("Phone Number should have 11 numbers");return false;     //the onsubmitwill stop}
+		}
+	}
+</script>
+</head>
+<body>
+	<form id="theForm" method = "post" action = "message.html" onSubmit="return validateTextBox();">
+	<label> First Name </label>
+	 <input type = "text" id = "first" value=" " size = 40 maxlength= 50>
+	  <br>
+	 <label> Last Name </label>
+	  <input type = "text" id = "last" value = " " size = 40 maxlength= 50>
+	   <br>
+	  <label> CellPhoneNumber </label>
+	   <input type = "text" id = "phone" value = " " size = 40 maxlength= 11>
+	     <br>
+	   <label> Email </label>
+	   	<input type = "email" value = " ">
+	     <br>
+	   <button type="submit">  SUBMIT THIS FORM </button>
+	  </form>
+</body>
+</html>

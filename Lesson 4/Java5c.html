@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function validateTextBox(){
+		 var box = document.getElementById("first");
+		if (box.value== " ")
+		{
+		alert ("This field for First Name cannot be blank");return false;     //the onsubmitwill stop}}
+</script>
+</head>
+<body>
+	<form id="theForm" method = "post" action = "message.html" onSubmit="return validateTextBox();">
+	<label> First Name </label>
+	 <input type = "text" id = "first" value=" " size = 40 maxlength= 50>
+	  <br>
+	 <label> Last Name </label>
+	  <input type = "text" id = "last" value = " " size = 40 maxlength= 50>
+	   <br>
+	  <label> CellPhoneNumber </label>
+	   <input type = "text" id = "phone" value = " " size = 40 maxlength= 11>
+	     <br>
+	   <label> Email </label>
+	   	<input type = "email" value = " ">
+	     <br>
+	   <button type="submit">  SUBMIT THIS FORM </button>
+	  </form>
+</body>
+</html>
